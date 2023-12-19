@@ -1,3 +1,3 @@
-привет
-я люблю мирэа
-а также парсить расписание!
+hello
+i love mirea
+and parse mirea!

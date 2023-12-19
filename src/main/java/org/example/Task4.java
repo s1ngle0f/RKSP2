@@ -8,7 +8,7 @@ import java.util.zip.CRC32;
 
 public class Task4 {
     public static void main(String[] args) {
-        Path dirPath = Paths.get("C:\\Users\\zubko\\IdeaProjects\\RKSP2\\src\\main\\java\\org\\example");
+        Path dirPath = Paths.get("C:\\Users\\zubko\\Documents\\GitHub\\RKSP2\\src\\main\\java\\org\\example");
 
         try (WatchService watchService = FileSystems.getDefault().newWatchService()) {
             dirPath.register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_MODIFY, StandardWatchEventKinds.ENTRY_DELETE);
@@ -49,5 +49,6 @@ public class Task4 {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+        
     }
 }
